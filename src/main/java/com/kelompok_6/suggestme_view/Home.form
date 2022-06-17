@@ -965,7 +965,6 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="fotoFood">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jLabel17"/>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[210, 250]"/>
                         </Property>

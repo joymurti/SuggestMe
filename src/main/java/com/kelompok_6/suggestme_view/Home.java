@@ -895,7 +895,6 @@ public class Home extends javax.swing.JFrame {
         hargaItem1.setText("Pagi");
         jPanel3.add(hargaItem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, -1, 20));
 
-        fotoFood.setText("jLabel17");
         fotoFood.setPreferredSize(new java.awt.Dimension(210, 250));
         jPanel3.add(fotoFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, -1, -1));
 
@@ -1606,6 +1605,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Anda Belum Memasukkan Saldo Awal!");
         } else {
             this.a.insertSaldo(this.loginUser, Integer.parseInt(saldoField.getText()), this);
+            labelSaldo.setText("Rp." + String.valueOf(this.loginUser.getKeuangan().getTotalSaldo()) + ",00");
         }
     }//GEN-LAST:event_submitBtnMousePressed
 
@@ -1622,6 +1622,7 @@ public class Home extends javax.swing.JFrame {
         } else {
 //            a.insertSaldo(this.loginUser, Integer.parseInt(saldoField1.getText()), this);
             this.b.insertPemasukan(loginUser, Integer.parseInt(saldoField1.getText()), decsField1.getText(), this);
+            labelSaldo.setText("Rp." + String.valueOf(this.loginUser.getKeuangan().getTotalSaldo()) + ",00");
         }
     }//GEN-LAST:event_submitBtn1MousePressed
 
@@ -1637,6 +1638,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Ada Field yang belum diisi!");
         } else {
             this.b.insertPengeluaran(loginUser, Integer.parseInt(saldoField2.getText()), decsField.getText(), this);
+            labelSaldo.setText("Rp." + String.valueOf(this.loginUser.getKeuangan().getTotalSaldo()) + ",00");
         }
     }//GEN-LAST:event_submitBtn2MousePressed
 
